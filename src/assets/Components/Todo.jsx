@@ -58,12 +58,12 @@ function TodoList() {
         <div className='flex items-center justify-center h-[100vh] bg-[linear-gradient(90deg,_rgba(120,185,181,1)_0%,_rgba(15,130,140,1)_44%,_rgba(6,80,132,1)_100%)]'>
             <div className=' h-[450px] w-[550px]  bg-[#cae1e3] rounded-md overflow-auto shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] p-4 li-shadow'>
                 <div>
-                    <h1 className='text-[#58466f] text-center font-bold text-2xl mt-8'>Tasks To-Do</h1></div>
+                    <h1 className='text-[#58466f] text-center font-bold text-2xl mt-8'>ENTER YOUR TASKS TO-DO</h1></div>
                 <div className='mt-[50px] flex justify-center'>
                     <div>
 
                         <input value={newtask} type="text" placeholder='Enter The Task' onChange={handleinput} className='border-solid border-2 h-[50px] w-[300px] bg-white rounded-lg mb-5 font-medium text-center' />
-                        <button onClick={addtask} className='border-1 bg-[#065084] rounded-xl p-2 h-[50px] w-[80px] ml-2 text-white'>Add</button><br />
+                        <button onClick={addtask} className='border-1 bg-[#065084] rounded-xl p-2 h-[50px] w-[80px] ml-2 text-white'>ADD</button><br />
                         <div>
                             <ol>{tasks}</ol>
                         </div>
