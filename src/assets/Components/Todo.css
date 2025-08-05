@@ -1,14 +1,4 @@
-/* .parent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+
+.li-shadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
-input[text]{
-height:50px ;
-width: 150px;
-border: 1px solid rgb(53, 53, 53);
-}
-input[text]:focus{
-    border: 1.5px solid black;
-} */
