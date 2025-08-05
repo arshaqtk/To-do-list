@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useState } from 'react'
 import './Todo.css'
 import "tailwindcss";
@@ -8,10 +8,20 @@ import TrashIcon from '../../../public/TrashIcon';
 function TodoList() {
 
 
-    const [task, SetTask] = useState([])
+    const [task, SetTask] = useState(() => {
+    
+    const storedTasks = localStorage.getItem('task');
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  });
     const [newtask, SetnewTask] = useState("")
 
 
+
+useEffect(() => {
+    localStorage.setItem('task', JSON.stringify(task));
+  }, [task]);
+
+  
 
 
     function handleinput(event) {
